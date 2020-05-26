@@ -5,8 +5,6 @@ import { normalize } from 'polished';
 
 const GlobalStyle = createGlobalStyle`
   ${normalize()}  
-  
-  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
   * {
     box-sizing: border-box;
@@ -16,8 +14,11 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
 
+  #root {
+    height: 100%;
+  }
+
   body {
-    margin: 0;
     height: 100%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
